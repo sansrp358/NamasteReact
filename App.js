@@ -1,4 +1,6 @@
 // Hello World using React
+import React from "react";
+import ReactDOM from "react-dom";
 const heading = React.createElement("p", { id: "heading" }, "Hello From React");
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(heading);
@@ -16,7 +18,7 @@ Making Complex html
 */
 const parent = React.createElement(
   "div",
-  { id: "parent" },
+  { id: "root" },
   React.createElement("div", { id: "child" }, [
     React.createElement("h1", {}, "I am h1"),
     React.createElement("h2", {}, "I am h2"),
